@@ -46,7 +46,7 @@ jobs:
           at: ./
       - run:
           name: Check HTML and external links
-          command: htmltest
+          command: htmltest --conf tests/htmltest.yml
   check-google-analytics-token:
     docker:
       - image: circleci/golang:1.13
